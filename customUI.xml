@@ -1,0 +1,20 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui"
+    onLoad="LoadRibbon" > 	
+  <ribbon>
+    <tabs>
+     <tab idMso="TabHome" >
+        <group id="CustomGroup1" label="Completeness Table" insertAfterMso="GroupEditingExcel" >
+          <toggleButton id="CenterSelectiontgl" size="large" label="Center Sel" image="centered" onAction="CenterAcrossSelection" getPressed="CenterAcrossSelection_Pressed" />
+            
+            <button id="NA" label="N/A" size="large" onAction="setNA" image="NA" description="Set selection as Not Applicable" />
+          <button id="NSE" label="NSE" size="large" onAction="setNSE" image="NSE" />
+          <button id="MIN" label="MIN" size="large" onAction="setMIN" image="MIN" />
+          <button id="MAJ" label="MAJ" size="large" onAction="setMAJ" image="MAJ" />
+          <button id="HAZ" label="HAZ" size="large" onAction="setHAZ" image="HAZ" />
+          <button id="CAT" label="CAT" size="large" onAction="setCAT" image="CAT" />
+        </group>
+      </tab>
+
+    </tabs>
+  </ribbon>
+</customUI>
